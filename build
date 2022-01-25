@@ -46,4 +46,4 @@ do
 	fi
 done
 
-printf '[+] done building site'
+printf '[+] done building site\n'
