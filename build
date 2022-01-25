@@ -1,0 +1,7 @@
+#!/bin/sh
+set -x
+cp -r permanent/** generated
+for file in $(find sources | grep -v 'sources$')
+do
+	python3 scripts/fill.py $file templates/page.html > generated/$(basename $file)
+done
