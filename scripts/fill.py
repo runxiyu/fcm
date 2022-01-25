@@ -27,17 +27,20 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 from sys import argv, stderr
 import re
 
-def error(text):
-    print(text, file=stderr)
+def log(text):
+    print(text, file=stderr, end="")
 
 if len(argv) < 3:
-    error(f"usage: {argv[0]} data template")
+    log(f"[-] not enough arguments\n[H] usage: {argv[0]} data template\n")
     exit(1)
 
 data_filename = argv[1]
+template_filename = argv[2]
+
+log(f"[*] filling out {template_filename} against {data_filename}...")
+
 with open(data_filename, 'r') as data_file:
     data_text = data_file.read()
-    template_filename = argv[2]
     with open(template_filename, 'r') as template_file:
         while (template_line := template_file.readline()) != '':  # until EOF
             search_result = re.search("{{.*}}", template_line)  # insertion point
@@ -49,6 +52,13 @@ with open(data_filename, 'r') as data_file:
             variable_name = variable_placer[2:-2]
             variable_name_length = len(variable_name)
             variable_result = re.search(r"\\begin variable_name.*\\end variable_name".replace("variable_name", variable_name), data_text, flags=re.S)
+            if variable_result is None:
+                log(f" error\n[-] data file {data_filename} does not define {variable_name} as required by {template_filename}\n")
+                exit(2)
             variable_result_span = variable_result.span()
             variable_data = data_text[variable_result_span[0]:variable_result_span[1]][8+variable_name_length:-6-variable_name_length]  # 8 and 6 are legnth of "\\begin \n" and "\\end \n"
             print(template_line.replace(variable_placer, variable_data), end="")
+        template_file.close()
+    data_file.close()
+
+log(f" done\n")

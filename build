@@ -1,7 +1,25 @@
 #!/bin/sh
-set -x
+
+# TODO: clear generated and remake dirstructure
+
+printf '[*] copying permanent files\n'
+
 cp -r permanent/** generated
-for file in $(find sources | grep -v 'sources$')
+
+if [ "$?" = 0 ]
+then
+	printf '[+] permanent files copied\n'
+else
+	printf '[F] cannot copy permanent files\n'
+	exit 3
+fi
+
+for file in $(find sources -type f)
 do
-	python3 scripts/fill.py $file templates/page.html > generated/$(basename $file)
+	python3 scripts/fill.py $file templates/page.html > generated/${file#*/}
+	if [ "$?" != 0 ] 
+	then
+		printf '[F] critical script exited with error\n'
+		exit 4
+	fi
 done
