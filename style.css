@@ -90,7 +90,7 @@ header {
 .major-column {
 	padding-top: 4ex;
 	flex: 1 0 65%;
-	min-width: 40em;
+	min-width: 30em;
 	/* max-width: 100%; */
 	/* width: 65%; */
 	/* float: left; */
