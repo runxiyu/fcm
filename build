@@ -1,16 +1,19 @@
 #!/bin/sh
 
+
+printf '[*] building site\n'
+
 # TODO: clear generated and remake dirstructure
 
-printf '[*] copying permanent files\n'
+printf '[*] copying permanent files...'
 
 cp -r permanent/** generated
 
 if [ "$?" = 0 ]
 then
-	printf '[+] permanent files copied\n'
+	printf ' done\n'
 else
-	printf '[F] cannot copy permanent files\n'
+	printf ' error\n[F] cannot copy permanent files\n'
 	exit 3
 fi
 
@@ -23,3 +26,5 @@ do
 		exit 4
 	fi
 done
+
+printf '[+] done building site'
