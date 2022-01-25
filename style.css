@@ -1,3 +1,5 @@
+/* Public domain */
+
 html {
 	background-color: #e4e4e4;
 }
@@ -142,7 +144,7 @@ p {
 
 blockquote {
 	background-color: #cecece;
-	padding: 0.1em 1.2em;
+	padding: 0.1em 1.4em;
 	border-radius: 1em;
 }
 .quote-origin {
