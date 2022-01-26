@@ -4,7 +4,7 @@ html {
 }
 body {
 	line-height: 1.5em;
-	text-align: justify;
+	/* text-align: justify; */
 	max-width: 80em;
 	margin: auto;
 	background-color: white;
@@ -60,7 +60,7 @@ nav a, nav a:link, nav a:visited {
 }
 
 #logo {
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 	margin-top: 10px;
 }
 
