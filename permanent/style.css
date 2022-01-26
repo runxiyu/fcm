@@ -4,6 +4,7 @@ html {
 }
 body {
 	line-height: 1.5em;
+	text-align: justify;
 	max-width: 80em;
 	margin: auto;
 	background-color: white;
@@ -15,19 +16,19 @@ body {
 }
 
 a {
-    text-decoration-color: #bbb
+	text-decoration-color: #bbb
 }
 
 a:link {
-    color: #049
+	color: #049
 }
 
 a:visited {
-    color: #505050
+	color: #505050
 }
 
 a:active {
-    text-decoration: none
+	text-decoration: none
 }
 
 nav {
@@ -52,10 +53,10 @@ nav a, nav a:link, nav a:visited {
 	text-decoration: none;
 	font-weight: bold;
 	color: white;
-    display: inline-block;
-    line-height: 2em;
-    padding: 0 .6em;
-    margin-top: .125em;
+	display: inline-block;
+	line-height: 2em;
+	padding: 0 .6em;
+	margin-top: .125em;
 }
 
 #logo {
@@ -87,7 +88,7 @@ header {
 	/* overflow: auto; */
 	display: flex;
 	flex-wrap: wrap;
-	gap: 1em;
+	gap: 2em;
 }
 .major-column {
 	padding-top: 4ex;
