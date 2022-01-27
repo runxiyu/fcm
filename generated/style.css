@@ -119,6 +119,10 @@ header {
 }
 
 .grad-red {
+	background: #eee;
+	background: linear-gradient(#eee, white);
+}
+.grad-red {
 	background: #fee;
 	background: linear-gradient(#fdd, white);
 }
