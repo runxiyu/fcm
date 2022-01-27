@@ -26,7 +26,7 @@ printf '[*] building site\n'
 
 printf '[*] copying permanent files...'
 
-cp -r permanent/** generated
+cp -rf permanent/** generated
 
 if [ "$?" = 0 ]
 then
