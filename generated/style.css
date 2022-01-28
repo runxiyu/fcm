@@ -15,6 +15,10 @@ body {
 	box-shadow: 0 0 5px 5px #bbb;
 }
 
+img {
+	width: 50%;
+}
+
 a {
 	text-decoration-color: #bbb
 }
@@ -91,7 +95,7 @@ header {
 	gap: 2em;
 }
 .major-column {
-	padding-top: 4ex;
+	padding-top: 1.5ex;
 	flex: 1 0 65%;
 	min-width: 30em;
 	/* max-width: 100%; */
@@ -118,21 +122,29 @@ header {
 	margin: 4ex 0;
 }
 
-.grad-red {
+.grad-grey {
 	background: #eee;
 	background: linear-gradient(#eee, white);
 }
 .grad-red {
-	background: #fee;
+	background: #fdd;
 	background: linear-gradient(#fdd, white);
 }
 .grad-blue {
-	background: #f6f6ff;
+	background: #eef;
 	background: linear-gradient(#eef, white);
 }
 .grad-green {
-	background: #efe;
+	background: #dfd;
 	background: linear-gradient(#dfd, white);
+}
+.grad-green {
+	background: #ffd;
+	background: linear-gradient(#ffd, white);
+}
+.grad-green {
+	background: #fed;
+	background: linear-gradient(#fed, white);
 }
 
 footer {
