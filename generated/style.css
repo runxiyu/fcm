@@ -15,8 +15,11 @@ body {
 	box-shadow: 0 0 5px 5px #bbb;
 }
 
+.imagewrap {
+	text-align: center;
+}
 img {
-	width: 50%;
+	width: 25%;
 }
 
 a {

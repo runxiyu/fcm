@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<div id="top">
-			<a class="skip" href="#content">Skip to main text/a>
+			<a class="skip" href="#content">Skip to main text</a>
 		</div>
 		<header>
 			<a href="/"><img id="logo" src="/logo.png" alt="Free Computing Movement" /></a>
@@ -35,7 +35,9 @@
 <p>These are hardware that meet <em>most important parts</em> of our requirements.  Minor workarounds may be required to completely use free software.</p>
 <div class="emph-box grad-blue">
 	<h4>ThinkPad X60, X60S, X60T, X200, X200S, X200T, T60, T400, T400S, T500, W500, R400 and R500</h4>
-	<img src="https://static.fsf.org/nosvn/ryf/taurinus-x200-right.jpg" alt="The X200" caption="The X200"/>
+	<div class="imagewrap">
+		<img src="https://static.fsf.org/nosvn/ryf/taurinus-x200-right.jpg" alt="The X200" caption="The X200"/>
+	</div>
 	<p>Good-old Lenovo ThinkPads.  (All of them have the classic keyboard, too.)</p>
 	<ol>
 		<li>There are no official public schematics, but there are user-created ones online.  The physical dimensions are in the manual.</li>
@@ -48,9 +50,10 @@
 </div>
 <div class="emph-box grad-blue">
 	<h4><a href="https://beagleboard.org/black/">BeagleBone Black</a></h4>
-	<img src="https://beagleboard.org/static/ti/product_detail_black_sm.jpg" alt="The BBB" caption="The BBB"/>
+	<div class="imagewrap">
+		<img src="https://beagleboard.org/static/ti/product_detail_black_sm.jpg" alt="The BBB" caption="The BBB"/>
+	</div>
 	<p>BeagleBone Black is a low-cost, community-supported development platform for developers and hobbyists. Boot GNU/Linux in under 10 seconds and get started on development in less than 5 minutes with just a single USB cable.</p>
-	<p>Let's take a look at the requirements.</p>
 	<ol>
 		<li>The design files are available on <a href="https://github.com/beagleboard/beaglebone-black">the project GitHub</a>, which you can clone without running nonfree JavaScript.  They did not include a LICENSE file, so the license is unclear;  However, considering the usual business practices of BeagleBoard, I expect them to free this after reading <a href="https://github.com/beagleboard/beaglebone-black/issues/14">my issue</a>.  (I consider this usage of GitHub to be using nonfree JS to eventually replace it.)</li>
 		<li>This hasn't been done, because this is an ARM board, and ARM is proprietary (and has been purchased by Nvidia).  I haven't seen <em>any</em> hardware that does this.</li>
@@ -60,6 +63,20 @@
 		<li>Single board computers don't usually meet this requirement.  However, you can make your own from the specs.</li>
 	</ol>
 	<p>It's quite hard for ARM devices to get to full certification, because they're not transparent with exactly how the CPU works.  The CPU is not auditable or programmable.</p>
+</div>
+<div class="emph-box grad-blue">
+	<h4>Most <a href="https://arduino.cc">Arduinos</a></h4>
+	<div class="imagewrap">
+		<img src="https://cdn.arduino.cc/homepage/static/media/arduino-UNO.bcc69bde.png" alt="Arduino UNO" caption="Arduino UNO" />
+	</div>
+	<p>Arduino is an "open-source" (think free software) electronics platform based on easy-to-use hardware and software. It's intended for anyone making interactive projects.</p>
+	<ol>
+		<li>Public schematics and CAD files for anyone to use.</li>
+		<li>You can boot your own bootloader, so that's a partial.  Things are pretty simple in Arduinos.</li>
+		<li>Documentation is everywhere, including for the ATMega (and other chips) interfaces, programming tutorials, etc.</li>
+		<li>The IDE is written in Java and may be considered bloated, however it is free software.  There are other ways to upload your program to your Arduino, too.</li>
+		<li>You can make your own, and everything is quite simple if you have good SMD soldering skills.</li>
+	</ol>
 </div>
 <h2>Marginal Cerfification</h2>
 <p>These are hardware that meet <em>some important parts</em> of our requirements.  Some might even require workarounds to work fully with free software only.</p>
@@ -76,7 +93,9 @@
 <h3>Mensions</h3>
 <div class="emph-box grad-orange">
 	<h4><a href="https://frame.work">The Framework Laptop</a></h4>
-	<img src="https://images.prismic.io/frameworkmarketplace/b1214b28-7de7-4597-9cbd-c35d1ed5c182_Framework+Laptop+Homepage+-+img04.jpg?auto=compress,format" alt="The Framework Laptop" caption="The Framework Laptop" />
+	<div class="imagewrap">
+		<img src="https://images.prismic.io/frameworkmarketplace/b1214b28-7de7-4597-9cbd-c35d1ed5c182_Framework+Laptop+Homepage+-+img04.jpg?auto=compress,format" alt="The Framework Laptop" caption="The Framework Laptop" />
+	</div>
 	<p>A thin, lightweight, high-performance 13.5” notebook that can be upgraded, customized, and repaired in ways that no other notebook can. Proof that designing products to last doesn’t require sacrificing performance, quality, or style.</p>
 	<ol>
 		<li>Unclear.  We've heard rumors that there are such designs somewhere, but this is unconfirmed.</li>
