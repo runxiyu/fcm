@@ -23,7 +23,7 @@ body {
 	border: 0.1em solid #bbb;
 	background-color: white;
 }
-.imagewrap img .needpadding {
+.needpadding {
 	padding: 0.75em;
 }
 
