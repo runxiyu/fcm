@@ -26,6 +26,15 @@ body {
 .needpadding {
 	padding: 0.75em;
 }
+.clockwise {
+	transform: rotate(90deg);
+}
+.counterclockwise {
+	transform: rotate(-90deg);
+}
+.upsidedown {
+	transform: rotate(-180deg);
+}
 
 a {
 	text-decoration-color: #bbb
