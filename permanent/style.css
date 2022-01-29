@@ -10,7 +10,7 @@ body {
 	background-color: white;
 	color: black;
 	font-family: sans-serif;
-	border: .1em solid #bbb;
+	border: 0.1em solid #bbb;
 	border-top: 0;
 	box-shadow: 0 0 5px 5px #bbb;
 }
@@ -18,8 +18,9 @@ body {
 .imagewrap {
 	text-align: center;
 }
-img {
+.imagewrap img {
 	width: 25%;
+	border: 0.1em solid #bbb;
 }
 
 a {
