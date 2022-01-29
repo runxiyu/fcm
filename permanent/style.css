@@ -21,6 +21,8 @@ body {
 .imagewrap img {
 	width: 25%;
 	border: 0.1em solid #bbb;
+	padding: 0.5em;
+	background-color: white;
 }
 
 a {
