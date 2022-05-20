@@ -16,7 +16,7 @@
 		<nav>
 			<ul>
 				<li><a href="/">home</a></li>
-				<li><a href="/certs">hardware</a></li>
+				<li><a href="/hardware">hardware</a></li>
 				<li><a href="/introducing">introducing</a></li>
 			</ul>
 		</nav>
@@ -25,73 +25,19 @@
 				<div class="major-column" role="article">
 					<div id="what-is-this">
 	<h2>What is the Free Computing Movement?</h2>
-	<p><strong>The Free Computing Movement (FCM) is a <em>community of activists</em> with a worldwide mission to promote computer user freedom.  We defend the rights of all computer users&mdash;to know what their computers are doing, and to modify and redistribute at will.</strong></p>
+	<p><strong>The Free Computing Movement (FCM) is a <em>community of activists</em> with a worldwide mission to promote computer user freedom.  We defend the rights of all computer users&mdash;to know what their computers are doing, and to modify and redistribute software and hardware designs at will.</strong></p>
 	<!--How do we defend?  By educating them that there are free sw/hw alternatives to proprietary malwawre that people use.-->
-	<!--Good legislation:  Better prompts for EULAs-->
-	<p>The Free Computing Movement promotes free software and free hardware.</p>
-	<p>The <a href="https://fsf.org">Free Software Foundation</a> is a nonprofit with a worldwide mission to promote computer user freedom.  However, as we've discussed in <a href="https://lists.gnu.org/archive/html/libreplanet-discuss/2022-01/msg00102.html">an email thread</a> via <a href="https://lists.gnu.org/mailman/listinfo/libreplanet-discuss">LibrePlanet-discuss</a>, merely having free software doesn't give us the freedom we deserve. <!--Which freedoms exactly?  Create a page for that.  The difference between software and hardware freedom.-->  This Websites aims to serve as a discussion platform for us activists.</p>
-	<p><strong>As with free software, the "free" in "free computing" does not refer to price; it refers to freedom and liberty of users.</strong></p>
-	<p>The FSF already does a good job in promoting <em>free software ideology</em>.  This Website is mainly for posts on <em>hardware hardware designs</em>, and in addition, possibly ideas on free software that the wider community hasn't touched upon.</p>
-        <blockquote>
-                <p>In fact, access to schematics, boardviews, datasheets and any other documentation is <em>critical</em> to software freedom.</p>
-		<p class="quote-origin">Leah Rowe, founder and lead developer of
-        <a href="https://libreboot.org">Libreboot</a>, who isn't
-        affiliated with this thing but has given Andrew a lot of
-        inspiration</p>
-        </blockquote>
-	<p>We can't make free software, especially bootloaders and operating systems, if we don't have knowledge of how hardware works.  In modern day computing we do understand how to design kernels for most architectures such as x86 and aarch64, but this is not enough&mdash;without extensive research into how components in a specific peice of hardware interact with each other, we may be able to accomplish simple tasks such as running an OS on it, but <a href="https://www.fsf.org/campaigns/fight-to-repair">the right to repair</a> is severely restricted, and we can't check if the <em>hardware</em> is doing nasty things, or replace parts of it should it be so.</p>
+	<p>The Free Computing Movement promotes free software and free hardware designs.</p>
 </div>
-<div id="what-is-free-hardware">
-	<h2>What are Free Hardware Designs?</h2>
-	<p>Hardware that meets the following conditions are free hardware.</p>
-	<ol>
-		<li>The design files, for example 3D models and circuit diagrams, are available under a free license;</li>
-		<li>All verilogs of FGPAs, if any (it is wise to use FGPAs for the sake of condition 5) are available under a free license;</li>
-		<li>The documentations of interfaces of the hardware, such as data sheets, are available under a free license;</li>
-		<li>The hardware is fully functional with no proprietary software;</li>
-		<li>The hardware is designed to be easy to tinker around with (including improving and reparing, e.g. being modular) and contains no tivoization.</li>
-	</ol>
-	<p>Here, a free license means that the user may use, adapt and/or redistribute the work for any purpose, similar to the four essential freedoms of <a href="https://www.gnu.org/philosophy/free-sw.html">free software</a>.  The design and documentation is like the equivalent of "source code" in software.</p>
-	<p>We have found no hardware that have/meet all of these requirements (i.e. full certification) now.  But some come close!  Consider them when purchasing your next hardware.  See <a href="/certs">certifications</a>.</p>
-	<!--Either all hw manufacturers ignore the issue; or what we are seeking for is currently unrealistic.-->
-</div>
-<div id="benefits-of-free-hardware">
-	<h2>What are the Benefits of Free Hardware?</h2>
-	<ol>
-		<li>You can be ensured that your hardware is not spying on you or doing anything nasty like that, because you and your technical friends can audit what's going on, reprogram the FPGAs, etc.;</li>
-		<li>You can get fully free software operating systems on your hardware to work properly and use all the features that your hardware has, without ever running a nonfree program, so you more easily get the benefits of free software;</li>
-		<li>You can easily create your own software or operating system that interacts with the hardware given enough expertise and good documentation;</li>
-		<li>You can create your own version of the hardware as you wish, for example for friends who are in need of hardware but cannot afford commercial ones, since circuit diagrams, 3D models, and verilogs are available;</li>
-		<li>You can upgrade the parts on your own, thus cutting down on e-waste, helping protecting our land from plastic, helping protecting our environment which we all live in and depend on;</li>
-		<li>You can rely on 3D models and circuit diagrams when you're integrating hardware into a new project, for example your own computer case, without taking the trouble to measure everything and create your own model for an exact fit.</li>
-	</ol>
-</div>
-<div id="how-can-i-help">
-	<h2>How Can I Help?</h2>
-	<h3>Users</h3>
-	<p>If you're just a normal computer user, kindly ask the manufacturer of your hardware for design files and datasheets.  Show manufacturer that you care about your freedom to hack the hardware.</p>
-	<p>When considering purchasing new hardware, prioritize free hardware.  At this stage it is extremely rare to find any, but still be on the lookout.  Please, if you find any that seem to be trustworthy, tell the community about it.</p>
-	<h3>Hardware manufacturers</h3>
-	<p>When you create a hardware design, use the <a href="https://www.gnu.org/licenses/gpl-3.0.txt">GNU General Public License, version 3</a> (please add "or later") or the <a href="https://ohwr.org/cern_ohl_s_v2.txt">CERN Open Hardware Licence Version 2 - Strongly Reciprocal</a> license!  CERN 2.0 is a strong copyleft license for hardware designs, similar to the spirit of the GNU GPL, which is more widely used in free software.  The GPL is not specifically designed for hardware designs, but it seems to be work for hardware designs, at least RMS's lawyers believe it's okay.  CERN 2.0 is more complicated and has more legalese.  However, since the GPL can acheive most of CERN, discussion is needed for which to use and whether letting yet another license proliferate is good.  Using these licenses ensures that it is illegal to take your design and make proprietary hardware (or designs thereof) out of it.</p>
-	<p>If you're wondering how you could profit, see <a href="#faq-profit">the FAQ on profits</a>.</p>
-</div>
-<div id="faq">
-	<h2>Frequently Asked Questions</h2>
-	<h3 id="faq-profit">What would be the incentive for hardware manufacturers to continue develop hardware and innovate?</h3>
-	<p>You may profit from providing support to end users who don't know how to deal with hardware.</p>
-	<p>However, is profit your goal of developing hardware?  When profit is the goal of a project or company, people often ignore the social consequences they bring about to people.  <a href="https://project.andrewyu.org/libresociety">Profit is not essential, or good, for the development of everything.</a>  </p>
-	<h3 id="development-cost">How would developers gather the resources to develop hardware?  Developing hardware is expensive.</h3>
-	<p>This is an issue.  However, people in the free software community&mdash;who probably also support free hardware&mdash;would probably be more than happy to support you.</p>
-	<p>It should be noted that many or most of the expenses of developing hardware today comes from patents.  <a href="https://endsoftwarepatents.org">Software patents make developing software exceptionally hard as developers cannot be passively (i.e. with no extra work) ensured that they're not infringing patents just by not copying others' work&mdash;they need to actively look for works similar to theirs and check if these are patented, leading to an exponential increase in development cost</a>, which we can already see with people patenting technologies to speed up the free RISC-V architecture, leaving others with slow versions of the architecture as the way to speed the processor up is patented.  (This is yet another reason to use copyleft licenses.)</p>
-	<h3 id="faq-collective-control">How would this affect me, a normal computer user who doesn't understand how my hardware works?</h3>
-	<p>There are certainlly people who would understand how the hardware works, and possibly tinker with it, given free documentation, design files and datasheets.  It is impossible for everyone to be a computer expert;  however, free hardware and free software grant people collective control over their computing, with the freedom to redistribute modified version of the original work.</p>
-</div>
-<div id="random-notes">
-	<h2>Random Notes</h2>
-	<p>3D printing is important and liberating technology, via which people
-	are able to create their own hardware, furniture and you name it
-	with 3D printing, not requiring a huge investment into factories
-	and the like.</p>
+<div id="fields-of-work">
+	<h2>Fields of Work</h2>
+	<p>These fields are what the Free Computing community are focusing on, to the extent identifiable by us.</p>
+	<ul>
+		<li>Explore Free Hardware designs, without which no computer user is free;</li>
+		<li>Introducing people to the ideas of free computing and free computing itself;</li>
+		<li>Getting governments, workplaces and other places to use Free Software and not require nonfree software;</li>
+		<li>Further develop Free Software itself, aiding users' transition and convenience ourselves.</li>
+	</ul>
 </div>
 				</div>
 				<div class="minor-column" role="complementary">
